@@ -22,6 +22,13 @@ const page = () => {
         >
           Prev Step
         </Link>
+        <Link
+          className=" px-4 py-2 text-black bg-white
+          border-black border-2 "
+          href="/step/4"
+        >
+          Next Step
+        </Link>
       </div>
 
       {/* Sub-step 1 */}

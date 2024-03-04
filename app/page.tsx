@@ -104,7 +104,10 @@ export default function Home() {
             <ol className="list-decimal pl-4 mt-2">
               <li>
                 Create a <code>.env</code> file in your project root with <br />
-                <code>cp .env.example .env</code> <br />
+                <pre className="bg-gray-300 p-2 rounded-md mt-2">
+                  cp .env.example .env
+                </pre>{" "}
+                <br />
                 Replace the placholder values with your newly setup google cloud
                 and firebase configs.
               </li>
@@ -122,6 +125,69 @@ export default function Home() {
                 Next.js Environment Variables documentation
               </a>{" "}
               for details on setting up environment variables.
+            </p>
+          </div>
+        </Link>
+        <Link href="/step/4">
+          <div className="bg-gray-200 hover:border-black border-2 p-4 cursor-pointer">
+            <h2 className="text-xl font-semibold mb-2">
+              Step 4: Customize and Develop Your App
+            </h2>
+            <p>
+              Congratulations on completing the initial setup! Now it's time to
+              customize the starter files and start developing your Next.js app.
+            </p>
+            <ol className="list-decimal pl-4 mt-2">
+              <li>
+                Feel free to tailor the <code>page.tsx</code> file in your app
+                directory to match your project requirements.
+              </li>
+              <li>
+                You have the flexibility to either remove or build upon the
+                pre-made route folders. I've included <code>about</code>,{" "}
+                <code>protected</code>, and <code>step</code> folders to
+                kickstart your development.
+              </li>
+            </ol>
+          </div>
+        </Link>
+        <Link href="/step/5">
+          <div className="bg-gray-200 hover:border-black border-2 p-4 cursor-pointer">
+            <h2 className="text-xl font-semibold mb-2">
+              Step 5: Deploy Your Next.js App to Vercel
+            </h2>
+            <p>
+              You're almost there! Let's deploy your Next.js app to Vercel and
+              make it live for the world to see.
+            </p>
+            <div className="mt-2">
+              <p className="mb-2 font-semibold">Prerequisites:</p>
+              <ul className="list-disc pl-4">
+                <li>
+                  Make sure you have a Vercel account. If not, you can sign up
+                  at{" "}
+                  <a className="underline" href="https://vercel.com/">
+                    Vercel
+                  </a>
+                  .
+                </li>
+              </ul>
+            </div>
+            <div className="mt-2">
+              <p className="mb-2 font-semibold">Deployment Steps:</p>
+              <ol className="list-decimal pl-4">
+                <li>
+                  Install the Vercel CLI by running:
+                  <pre className="bg-gray-300 p-2 rounded-md mt-2">
+                    npm install -g vercel
+                  </pre>
+                </li>
+                {/* Add more deployment steps as needed */}
+              </ol>
+            </div>
+            <p className="mt-2">
+              Congratulations! Your Next.js app is now live on the internet.
+              Share the provided URL with the world.
             </p>
           </div>
         </Link>
