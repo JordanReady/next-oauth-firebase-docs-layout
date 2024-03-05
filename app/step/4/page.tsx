@@ -63,6 +63,11 @@ const page = () => {
             <code className="bg-slate-300">page.tsx</code> file. This will
             effectivley act as your home page.
           </li>
+          <li>
+            Check out the <code className="bg-slate-300">middleware.ts</code>{" "}
+            file to add protected routes. If an unauthorized user lands on a
+            route they shouldn't, your app will make them login first!
+          </li>
 
           <li>
             The <code className="bg-slate-300">about</code> folder,{" "}
@@ -74,6 +79,15 @@ const page = () => {
           <li>
             Don't forget to tweak the metadata in the layout! Change your name
             and description.
+          </li>
+          <li>
+            After you've given your code a fresh new look, I'd recommend
+            deploying your app with Vercel before diving too deep into your
+            development. Or, if you're feeling adventurous, add a bunch of files
+            and packages, then spend an entire day debugging your deployment.
+            Bonus points for committing changes with cryptic messages like
+            "Fix??" or "This fix has to fix it!" or "Does this sh*t even work?".
+            Just do yourself a favor and deploy early – thank me later.
           </li>
         </ol>
       </div>
