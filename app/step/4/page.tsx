@@ -55,11 +55,28 @@ const page = () => {
         </p>
       </div>
 
-      <p>
-        Happy coding! If you have any questions or run into issues during
-        development, don't hesitate to refer to the Next.js documentation or
-        seek help from the community.
-      </p>
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">Helpful Tips</h2>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>
+            Delete all the hard work I painstakingly put into the{" "}
+            <code className="bg-slate-300">page.tsx</code> file. This will
+            effectivley act as your home page.
+          </li>
+
+          <li>
+            The <code className="bg-slate-300">about</code> folder,{" "}
+            <code className="bg-slate-300">protected</code> folder, and the{" "}
+            <code className="bg-slate-300">step</code> folder are there for
+            demonstration purposes. Feel free to trash those too, or use them if
+            you want! {"(You'll probably just trash them though...)"}
+          </li>
+          <li>
+            Don't forget to tweak the metadata in the layout! Change your name
+            and description.
+          </li>
+        </ol>
+      </div>
     </div>
   );
 };
