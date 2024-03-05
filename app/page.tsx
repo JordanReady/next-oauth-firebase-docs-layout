@@ -28,6 +28,7 @@ export default function Home() {
                 <a
                   className="underline"
                   href="https://console.cloud.google.com/"
+                  target="_blank"
                 >
                   Google Cloud Console
                 </a>
@@ -43,6 +44,7 @@ export default function Home() {
               <a
                 className="underline"
                 href="https://cloud.google.com/gcp/getting-started"
+                target="_blank"
               >
                 Google Cloud Getting Started Guide
               </a>
@@ -66,6 +68,7 @@ export default function Home() {
                 <a
                   className="underline"
                   href="https://console.firebase.google.com/"
+                  target="_blank"
                 >
                   Firebase Console
                 </a>
@@ -84,6 +87,7 @@ export default function Home() {
               <a
                 className="underline"
                 href="https://firebase.google.com/docs/web/setup"
+                target="_blank"
               >
                 Firebase Web Setup Guide
               </a>{" "}
@@ -121,6 +125,7 @@ export default function Home() {
               <a
                 className="underline"
                 href="https://nextjs.org/docs/basic-features/environment-variables"
+                target="_blank"
               >
                 Next.js Environment Variables documentation
               </a>{" "}
@@ -166,7 +171,11 @@ export default function Home() {
                 <li>
                   Make sure you have a Vercel account. If not, you can sign up
                   at{" "}
-                  <a className="underline" href="https://vercel.com/">
+                  <a
+                    className="underline"
+                    href="https://vercel.com/"
+                    target="_blank"
+                  >
                     Vercel
                   </a>
                   .
