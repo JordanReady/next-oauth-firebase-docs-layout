@@ -29,7 +29,7 @@ const page = () => {
         </Link>
       </div>
       {/* Sub-step 1 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Set up Vercel account and install CLI
         </h2>
@@ -48,7 +48,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 2 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 2: Deploy to Vercel
         </h2>
@@ -63,7 +63,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 3 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 3: Update Google Cloud Console settings
         </h2>
@@ -75,9 +75,9 @@ const page = () => {
           <li>Try and Login on your deployed app</li>
           <li>
             You'll see Request details:{" "}
-            <code className="bg-slate-300">
-              redirect_uri={" "}
-              <code className="bg-slate-400">
+            <code>
+              redirect_uri=
+              <code className="bg-slate-300">
                 https://yourapp.vercel.app/api/auth/callback/google
               </code>
             </code>{" "}
@@ -92,7 +92,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 4 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 4: Test the deployment
         </h2>

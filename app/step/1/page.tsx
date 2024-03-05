@@ -24,7 +24,7 @@ const page = () => {
         </Link>
       </div>
       {/* Sub-step 1 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Create a Google Cloud account
         </h2>
@@ -48,7 +48,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 2 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 2: Set up a new project
         </h2>
@@ -64,7 +64,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 3 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 3: Set up OAuth consent screen
         </h2>

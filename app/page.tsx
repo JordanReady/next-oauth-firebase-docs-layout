@@ -119,7 +119,7 @@ export default function Home() {
             <ol className="list-decimal pl-4 mt-2">
               <li>
                 Create a <code>.env</code> file in your project root with <br />
-                <pre className="bg-gray-300 p-2 rounded-md mt-2">
+                <pre className="bg-gray-300 p-2  mt-2">
                   cp .env.example .env
                 </pre>{" "}
                 <br />
@@ -198,11 +198,15 @@ export default function Home() {
               <ol className="list-decimal pl-4">
                 <li>
                   Install the Vercel CLI by running:
-                  <pre className="bg-gray-300 p-2 rounded-md mt-2">
+                  <pre className="bg-gray-300 p-2  mt-2">
                     npm install -g vercel
                   </pre>
                 </li>
-                {/* Add more deployment steps as needed */}
+                <li>
+                  Deploy to production by running:{" "}
+                  <pre className="bg-gray-300 p-2  mt-2">vercel --prod</pre>
+                </li>
+                <li>Import environment variables on vercel</li>
               </ol>
             </div>
             <p className="mt-2">

@@ -36,7 +36,7 @@ const page = () => {
         customize the starter files and start developing your Next.js app.
       </p>
 
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">Clean Up Starter Files</h2>
         <p>
           The provided starter files are there to guide you. Feel free to clean
@@ -45,7 +45,7 @@ const page = () => {
         </p>
       </div>
 
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">Start Developing</h2>
         <p>
           Navigate to the <code className="bg-slate-300">app</code> directory to
@@ -55,7 +55,7 @@ const page = () => {
         </p>
       </div>
 
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">Helpful Tips</h2>
         <ol className="list-decimal pl-4 mt-2">
           <li>

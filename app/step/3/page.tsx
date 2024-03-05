@@ -24,7 +24,7 @@ const page = () => {
         </Link>
       </div>
       {/* Sub-step 1 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Create .env file
         </h2>
@@ -45,7 +45,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 2 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 2: Obtain Google API credentials
         </h2>
@@ -64,7 +64,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 3 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 3: Configure Firebase settings
         </h2>
@@ -86,7 +86,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 4 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 4: Enable Firebase Admin
         </h2>
@@ -103,7 +103,7 @@ const page = () => {
       </div>
 
       {/* Sub-step 5 */}
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
+      <div className="bg-gray-200 p-4  mb-4">
         <h2 className="text-xl font-semibold mb-2">Sub-step 5: Test login</h2>
         <p>
           Save the changes and restart the development server to test the login
