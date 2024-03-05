@@ -11,16 +11,9 @@ const page = () => {
         <Link
           className=" px-4 py-2 text-black bg-white
           border-black border-2 "
-          href="/"
-        >
-          Home
-        </Link>
-        <Link
-          className=" px-4 py-2 text-black bg-white
-          border-black border-2 "
           href="/step/1"
         >
-          Prev Step
+          Previous Step
         </Link>
         <Link
           className=" px-4 py-2 text-black bg-white
@@ -30,19 +23,15 @@ const page = () => {
           Next Step
         </Link>
       </div>
-
       {/* Sub-step 1 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Create a Firebase account
         </h2>
-        <p>
-          To proceed with Firebase, you need to have a Firebase account. Follow
-          these steps:
-        </p>
+        <p>To get started, follow these steps:</p>
         <ol className="list-decimal pl-4 mt-2">
           <li>
-            Visit{" "}
+            Visit the{" "}
             <Link
               className="underline"
               href="https://console.firebase.google.com/"
@@ -52,42 +41,57 @@ const page = () => {
             </Link>
             .
           </li>
-          <li>Click on "Get Started" and follow the registration process.</li>
+          <li>Click on "Add project".</li>
+          <li>Select the Google Cloud project you set up in the first step.</li>
+          <li>Continue and set up Google Analytics if desired.</li>
         </ol>
       </div>
 
       {/* Sub-step 2 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
-          Sub-step 2: Add a new project
+          Sub-step 2: Add Firebase to your web app
         </h2>
-        <p>
-          Once you have your Firebase account, create a new project for your
-          Next.js app:
-        </p>
+        <p>Follow these steps to integrate Firebase with your Next.js app:</p>
         <ol className="list-decimal pl-4 mt-2">
-          <li>Inside the Firebase Console, click on "Add project".</li>
-          <li>Enter a project name and click "Continue".</li>
-          {/* Add more detailed steps as needed */}
+          <li>Click the{" </>"} button to add Firebase to your web app.</li>
+          <li>Give your app a nickname and register the app.</li>
+          <li>
+            Ignore the npm install firebase command, as it comes preinstalled.
+          </li>
+          <li>
+            Create a <code className="bg-slate-300">firebase.ts</code> file in
+            your root directory and paste the code provided by Firebase under
+            the install command.
+          </li>
         </ol>
       </div>
 
       {/* Sub-step 3 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
-          Sub-step 3: Retrieve Firebase config settings
+          Sub-step 3: Set up Authentication
         </h2>
-        <p>
-          You'll need to obtain the Firebase config settings for your Next.js
-          app. Here's how:
-        </p>
+        <p>Configure authentication for your Firebase project:</p>
         <ol className="list-decimal pl-4 mt-2">
-          <li>Inside your Firebase project, go to "Project settings".</li>
+          <li>Go to Authentication and click "Get Started".</li>
           <li>
-            Scroll down to the "Your apps" section and select the web app you
-            created.
+            For sign-in providers, select Google, enable it, and press save.
           </li>
-          {/* Add more detailed steps as needed */}
+          <li>Return to the project overview.</li>
+        </ol>
+      </div>
+
+      {/* Sub-step 4 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 4: Set up Cloud Firestore
+        </h2>
+        <p>Initialize Cloud Firestore for your project:</p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>Click Cloud Firestore and select "Get Started".</li>
+          <li>Leave defaults and press "Create".</li>
+          <li>Choose to start in production and press "Create".</li>
         </ol>
       </div>
 
@@ -97,7 +101,6 @@ const page = () => {
         <Link
           className="underline"
           href="https://firebase.google.com/docs/web/setup"
-          target="blank"
         >
           Firebase Web Setup Guide
         </Link>

@@ -48,10 +48,10 @@ const page = () => {
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">Start Developing</h2>
         <p>
-          Navigate to the <code>app</code> directory to begin building your
-          application. This directory is where you'll find the core components
-          and structure of your Next.js app. Explore and modify files based on
-          your project requirements.
+          Navigate to the <code className="bg-slate-300">app</code> directory to
+          begin building your application. This directory is where you'll find
+          the core components and structure of your Next.js app. Explore and
+          modify files based on your project requirements.
         </p>
       </div>
 

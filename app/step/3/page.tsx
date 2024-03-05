@@ -11,16 +11,9 @@ const page = () => {
         <Link
           className=" px-4 py-2 text-black bg-white
           border-black border-2 "
-          href="/"
-        >
-          Home
-        </Link>
-        <Link
-          className=" px-4 py-2 text-black bg-white
-          border-black border-2 "
           href="/step/2"
         >
-          Prev Step
+          Previous Step
         </Link>
         <Link
           className=" px-4 py-2 text-black bg-white
@@ -30,56 +23,104 @@ const page = () => {
           Next Step
         </Link>
       </div>
-
       {/* Sub-step 1 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
-          Sub-step 1: Create a .env file
+          Sub-step 1: Create .env file
         </h2>
         <p>
-          Configure environment variables by creating a `.env` file in your
-          project's root:
+          Follow these steps to create a{" "}
+          <code className="bg-slate-300">.env</code> file:
         </p>
         <ol className="list-decimal pl-4 mt-2">
           <li>
-            Create a new file named `.env` in your project's root directory.
+            Run <code className=" bg-slate-300 p-1">cp .env.example .env</code>{" "}
+            in your project root.
           </li>
           <li>
-            Add environment variables for your Google Cloud and Firebase
-            configurations.
+            Open the <code className="bg-slate-300">.env</code> file and fill in
+            the required information.
           </li>
-          {/* Add more detailed steps as needed */}
         </ol>
       </div>
 
       {/* Sub-step 2 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
-          Sub-step 2: Create a firebase.ts file
+          Sub-step 2: Obtain Google API credentials
+        </h2>
+        <p>Retrieve Google API credentials for your app:</p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>
+            Go to the Google Cloud Console and navigate to APIs & Services {">"}{" "}
+            Credentials.
+          </li>
+          <li>Under OAuth 2.0 Client IDs, download the credentials file.</li>
+          <li>
+            Copy the Client ID and Client Secret into your{" "}
+            <code className="bg-slate-300">.env</code> file.
+          </li>
+        </ol>
+      </div>
+
+      {/* Sub-step 3 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 3: Configure Firebase settings
+        </h2>
+        <p>Set up Firebase credentials for your project:</p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>
+            Go to your Firebase project settings and navigate to Service
+            accounts.
+          </li>
+          <li>
+            Generate a new private key and paste the keys into the{" "}
+            <code className="bg-slate-300">.env</code> file.
+          </li>
+          <li>
+            Format the private key correctly in the{" "}
+            <code className="bg-slate-300">.env</code> file.
+          </li>
+        </ol>
+      </div>
+
+      {/* Sub-step 4 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 4: Enable Firebase Admin
         </h2>
         <p>
-          Create a `firebase.ts` file to manage Firebase initialization and
-          configuration:
+          Uncomment the Firebase Admin initialization in the{" "}
+          <code>firebase-admin.ts</code> file.
         </p>
-        <ol className="list-decimal pl-4 mt-2">
-          <li>Create a new file named `firebase.ts` in your project.</li>
-          <li>
-            Copy the necessary Firebase initialization code into this file.
-          </li>
-          {/* Add more detailed steps as needed */}
-        </ol>
+        <p>
+          Open <code className="bg-slate-300">firebase-admin.ts</code> then push{" "}
+          <code className="bg-slate-300">ctrl + a</code> then{" "}
+          <code className="bg-slate-300">ctrl + /</code>
+          then <code className="bg-slate-300">ctrl + s</code>
+        </p>
+      </div>
+
+      {/* Sub-step 5 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">Sub-step 5: Test login</h2>
+        <p>
+          Save the changes and restart the development server to test the login
+          functionality.
+        </p>
       </div>
 
       {/* Additional information or links */}
       <p className="mt-4">
-        View the{" "}
+        For more details on setting up environment variables, refer to the{" "}
         <Link
           className="underline"
           href="https://nextjs.org/docs/basic-features/environment-variables"
         >
           Next.js Environment Variables documentation
         </Link>
-        for details on setting up environment variables.
+        .
       </p>
     </div>
   );

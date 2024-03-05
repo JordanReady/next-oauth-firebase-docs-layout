@@ -4,13 +4,24 @@ export default function Home() {
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-4xl font-bold mb-4">
-        Your Next.js OAuth/Firebase Starter Kit
+        Kickstart Your Next.js Journey with OAuth and Firebase
       </h1>
-      <p className="text-lg mb-8">
-        Welcome to your new Next.js app with NextAuth.js and Firebase set up out
-        of the box. Simply follow each of the steps to get your next project
-        ready to go!
+      <p className="text-lg mb-4">
+        Welcome to your Next.js app, pre-equipped with NextAuth.js and Firebase
+        for seamless authentication. Follow the outlined steps to effortlessly
+        set up your project. If you're new to any part of the process, dive into
+        the detailed step-by-step guides by clicking on the respective steps
+        card.
       </p>
+      <div className="mb-5 mt-0 flex gap-2">
+        <Link
+          className=" px-4 py-2 text-black bg-white
+            border-black border-2 hover:bg-slate-200"
+          href="/step/1"
+        >
+          Get Started!
+        </Link>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Link href="/step/1">

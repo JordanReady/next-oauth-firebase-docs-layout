@@ -4,9 +4,7 @@ import React from "react";
 const page = () => {
   return (
     <div className="container mx-auto p-8">
-      <h1 className="text-4xl font-bold mb-4">
-        Step 5: Deploy Your Next.js App to Vercel
-      </h1>
+      <h1 className="text-4xl font-bold mb-4">Step 5: Deploy to Vercel</h1>
       <div className="mb-4 flex gap-2">
         <Link
           className=" px-4 py-2 text-black bg-white
@@ -20,51 +18,94 @@ const page = () => {
           border-black border-2 "
           href="/step/4"
         >
-          Prev Step
+          Previous Step
+        </Link>
+        <Link
+          className=" px-4 py-2 text-black bg-white
+          border-black border-2 "
+          href="/about"
+        >
+          About
         </Link>
       </div>
-
-      <p className="text-lg mb-4">
-        You're almost there! Let's deploy your Next.js app to Vercel and make it
-        live for the world to see.
-      </p>
-
+      {/* Sub-step 1 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
-        <h2 className="text-xl font-semibold mb-2">Prerequisites</h2>
-        <p>
-          Before you proceed, make sure you have a Vercel account. If not, you
-          can sign up at{" "}
-          <Link className="underline" href="https://vercel.com/" target="blank">
-            Vercel
-          </Link>
-          .
-        </p>
-      </div>
-
-      <div className="bg-gray-200 p-4 rounded-md mb-4">
-        <h2 className="text-xl font-semibold mb-2">Deployment Steps</h2>
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 1: Set up Vercel account and install CLI
+        </h2>
+        <p>Follow these steps to deploy your app to Vercel:</p>
         <ol className="list-decimal pl-4 mt-2">
+          <li>Create a Vercel account if you don't have one.</li>
           <li>
-            Install the Vercel CLI by running:
-            <pre className="bg-gray-300 p-2 rounded-md mt-2">
-              npm install -g vercel
-            </pre>
+            Install the Vercel CLI by running{" "}
+            <code className="bg-slate-300">npm install -g vercel</code>.
           </li>
-          <li>Navigate to your project folder in the terminal.</li>
           <li>
-            Run the following command to deploy your app:
-            <pre className="bg-gray-300 p-2 rounded-md mt-2">vercel</pre>
-          </li>
-          <li>Follow the prompts to set up your deployment settings.</li>
-          <li>
-            Once deployed, your app will have a unique URL provided by Vercel.
+            Run <code className="bg-slate-300">vercel</code> in your project
+            directory.
           </li>
         </ol>
       </div>
 
-      <p>
-        Congratulations! Your Next.js app is now live on the internet. Share the
-        provided URL with the world.
+      {/* Sub-step 2 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 2: Deploy to Vercel
+        </h2>
+        <p>Continue deploying your app to Vercel:</p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>Add environment variables to Vercel using the dashboard.</li>
+          <li>
+            Run <code className="bg-slate-300">vercel --prod</code> in your
+            project directory to deploy your app.
+          </li>
+        </ol>
+      </div>
+
+      {/* Sub-step 3 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 3: Update Google Cloud Console settings
+        </h2>
+        <p>
+          Update Google Cloud Console settings to allow redirects from the
+          Vercel deployment:
+        </p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>Try and Login on your deployed app</li>
+          <li>
+            You'll see Request details:{" "}
+            <code className="bg-slate-300">
+              redirect_uri={" "}
+              <code className="bg-slate-400">
+                https://yourapp.vercel.app/api/auth/callback/google
+              </code>
+            </code>{" "}
+            Copy the uri and paste it in google cloud console
+          </li>
+          <li>Go to APIs & Services {">"} Credentials.</li>
+          <li>Click on OAuth 2.0 Client IDs for your application.</li>
+          <li>
+            Add the Vercel deployment URI to authorized redirect URIs and save.
+          </li>
+        </ol>
+      </div>
+
+      {/* Sub-step 4 */}
+      <div className="bg-gray-200 p-4 rounded-md mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 4: Test the deployment
+        </h2>
+        <p>
+          Go back to your application, try logging in, and verify that it's
+          working properly on the live Vercel link.
+        </p>
+      </div>
+
+      {/* Additional information or links */}
+      <p className="mt-4">
+        Note: If you decide to use a custom domain in the future, you'll need to
+        repeat these steps.
       </p>
     </div>
   );

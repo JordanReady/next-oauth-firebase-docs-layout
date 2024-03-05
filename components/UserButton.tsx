@@ -35,7 +35,7 @@ const UserButton = () => {
     <div className="relative">
       <button
         onClick={handleButtonClick}
-        className={`px-4 py-2 text-black bg-white border-black border-2 ${
+        className={`px-4 py-2 text-black bg-white border-black border-2 hover:bg-slate-200 ${
           session ? "signed-in" : ""
         }`}
       >
@@ -52,10 +52,16 @@ const UserButton = () => {
 
       {session && showDropdown && (
         <div className="absolute top-10 mt-3 right-0 bg-white  border-black border-2">
-          <Link className="block px-4 py-2" href="/protected">
+          <Link
+            className="block px-4 py-2 text-left hover:bg-slate-200"
+            href="/protected"
+          >
             Protected
           </Link>
-          <button onClick={handleLogout} className="block px-4 py-2">
+          <button
+            onClick={handleLogout}
+            className="block px-4 py-2 w-full text-left hover:bg-slate-200"
+          >
             Logout
           </button>
         </div>

@@ -28,10 +28,7 @@ const page = () => {
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Create a Google Cloud account
         </h2>
-        <p>
-          To get started, you need to create a Google Cloud account. Follow
-          these steps:
-        </p>
+        <p>To get started, follow these steps:</p>
         <ol className="list-decimal pl-4 mt-2">
           <li>
             Visit{" "}
@@ -69,22 +66,22 @@ const page = () => {
       {/* Sub-step 3 */}
       <div className="bg-gray-200 p-4 rounded-md mb-4">
         <h2 className="text-xl font-semibold mb-2">
-          Sub-step 3: Generate API keys and credentials
+          Sub-step 3: Set up OAuth consent screen
         </h2>
-        <p>
-          For Firebase authentication, you'll need to generate API keys and
-          credentials. Follow these steps:
-        </p>
+        <p>Follow these steps to set up the OAuth consent screen:</p>
         <ol className="list-decimal pl-4 mt-2">
+          <li>Navigate to "APIs & Services" {">"} "OAuth consent screen".</li>
+          <li>Set user type to external, then create.</li>
           <li>
-            Inside your project, navigate to "APIs & Services" {">"}
-            "Credentials".
+            Fill in app information, set the app domain to http://localhost:3000
+            for all 3 fields.
           </li>
+          <li>Set email to your email.</li>
           <li>
-            Click on "Create Credentials" and choose "API Key" or "Service
-            account key".
+            For Scopes, click "Add or remove scopes" and select the top 3 for
+            the bare minimum user data. Click update at the bottom.
           </li>
-          {/* Add more detailed steps as needed */}
+          <li>Save and continue.</li>
         </ol>
       </div>
 

@@ -13,17 +13,26 @@ const Header = () => {
       <div className="flex space-x-4">
         <Link
           className=" px-4 py-2 text-black bg-white
-            border-black border-2"
+            border-black border-2 hover:bg-slate-200"
           href="/about"
         >
           About
         </Link>
         <Link
           className=" px-4 py-2 text-black bg-white
-          border-black border-2"
+          border-black border-2 hover:bg-slate-200"
           href="https://www.jordanready.com/"
+          target="blank"
         >
           Developer
+        </Link>
+        <Link
+          className=" px-4 py-2 text-black bg-white
+          border-black border-2 hover:bg-slate-200"
+          href="https://jrui.vercel.app/"
+          target="blank"
+        >
+          UI?
         </Link>
         <UserButton />
       </div>
