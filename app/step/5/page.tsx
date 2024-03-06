@@ -85,8 +85,15 @@ const page = () => {
           </li>
           <li>Go to APIs & Services {">"} Credentials.</li>
           <li>Click on OAuth 2.0 Client IDs for your application.</li>
+          <li>Add the Vercel deployment URI to authorized redirect URIs.</li>
           <li>
-            Add the Vercel deployment URI to authorized redirect URIs and save.
+            You'll also need to add this URI to the Javascript origins:
+            <code>
+              {" "}
+              redirect_uri=
+              <code className="bg-slate-300">https://yourapp.vercel.app</code>
+              /api/auth/callback/google
+            </code>{" "}
           </li>
         </ol>
       </div>
