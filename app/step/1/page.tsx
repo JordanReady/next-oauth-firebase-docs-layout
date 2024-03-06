@@ -85,6 +85,38 @@ const page = () => {
         </ol>
       </div>
 
+      {/* Sub-step 4 */}
+      <div className="bg-gray-200 p-4  mb-4">
+        <h2 className="text-xl font-semibold mb-2">
+          Sub-step 4: Create Credentials
+        </h2>
+        <p>Follow these steps to set up the OAuth consent screen:</p>
+        <ol className="list-decimal pl-4 mt-2">
+          <li>Navigate to "APIs & Services" {">"} "Credentials".</li>
+          <li>Set user type to external, then create.</li>
+          <li>
+            Click the "+ CREATE CREDENTIALS" button at the top of the page.
+          </li>
+          <li>Select OAuth client ID</li>
+          <li>
+            Set Application type to web application then fill in app name.
+          </li>
+          <li>
+            Add an Authorized JavaScript origins URI. This will be
+            http://localhost:3000 for now.{" "}
+          </li>
+          <li>
+            Add Authorized redirect URI. This will be
+            http://localhost:3000/api/auth/callback/google for now
+          </li>
+          <li>Click create</li>
+          <li>
+            You can copy the client ID and the Client secret to the .env.example
+            file.
+          </li>
+        </ol>
+      </div>
+
       {/* Additional information or links */}
       <p className="mt-4">
         For more detailed instructions, refer to the{" "}
