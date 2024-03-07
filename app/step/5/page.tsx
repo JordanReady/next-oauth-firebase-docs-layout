@@ -33,16 +33,12 @@ const page = () => {
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 1: Set up Vercel account and install CLI
         </h2>
-        <p>Follow these steps to deploy your app to Vercel:</p>
+        <p>Follow these steps to get ready for deployment:</p>
         <ol className="list-decimal pl-4 mt-2">
           <li>Create a Vercel account if you don't have one.</li>
           <li>
             Install the Vercel CLI by running{" "}
             <code className="bg-slate-300">npm install -g vercel</code>.
-          </li>
-          <li>
-            Run <code className="bg-slate-300">vercel</code> in your project
-            directory.
           </li>
         </ol>
       </div>
@@ -52,12 +48,20 @@ const page = () => {
         <h2 className="text-xl font-semibold mb-2">
           Sub-step 2: Deploy to Vercel
         </h2>
-        <p>Continue deploying your app to Vercel:</p>
+        <p>Time to deploy your app to Vercel:</p>
         <ol className="list-decimal pl-4 mt-2">
-          <li>Add environment variables to Vercel using the dashboard.</li>
           <li>
-            Run <code className="bg-slate-300">vercel --prod</code> in your
-            project directory to deploy your app.
+            Run <code className="bg-slate-300">vercel</code> in your project
+            directory.
+          </li>
+          <li>
+            If you run into any errors you may need to add environment variables
+            to Vercel using the vercel dashboard.
+          </li>
+          <li>
+            Go to your project in vercel and launch the app from the live
+            domain. It should look something like this:{" "}
+            <code className="bg-slate-300">your-app-name.vercel.app</code>
           </li>
         </ol>
       </div>
