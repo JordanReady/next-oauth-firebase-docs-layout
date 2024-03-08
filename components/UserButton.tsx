@@ -23,19 +23,11 @@ const UserButton = () => {
     setShowDropdown(false);
   };
 
-  useEffect(() => {
-    if (session) {
-      console.log("User is signed in:", session.user);
-    } else {
-      console.log("User is not signed in");
-    }
-  }, [session]);
-
   return (
     <div className="relative">
       <button
         onClick={handleButtonClick}
-        className={`px-4 py-2 text-black bg-white border-black border-2 hover:bg-slate-200 ${
+        className={`px-4 py-2 text-black bg-white border btn-hover border-gradient ${
           session ? "signed-in" : ""
         }`}
       >
@@ -51,17 +43,8 @@ const UserButton = () => {
       </button>
 
       {session && showDropdown && (
-        <div className="absolute top-10 mt-3 right-0 bg-white  border-black border-2">
-          <Link
-            className="block px-4 py-2 text-left hover:bg-slate-200"
-            href="/protected"
-          >
-            Protected
-          </Link>
-          <button
-            onClick={handleLogout}
-            className="block px-4 py-2 w-full text-left hover:bg-slate-200"
-          >
+        <div className="absolute top-10 mt-3 right-0 bg-white  border-blue-500 border-2">
+          <button onClick={handleLogout} className=" btn-hover block px-4 py-2">
             Logout
           </button>
         </div>

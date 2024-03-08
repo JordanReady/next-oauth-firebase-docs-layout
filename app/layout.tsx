@@ -9,7 +9,7 @@ import authOptions from "@/auth";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Next/OAuth/Firebase Starter Kit",
+  title: "JRui Demo Site",
   description:
     "Starter kit that has step by step easy to follow instructions to help you configure your next project with authentication and a database ready to go!",
 };
