@@ -70,10 +70,10 @@ const DocNav: React.FC = () => {
   // Rendering the navigation buttons with Next and Previous links
   return (
     <div className="flex flex-wrap gap-2">
-      <Link href={prevUrl} className="btn-hover px-4 py-2 border-gradient">
+      <Link href={prevUrl} className="btn-hover border-gradient px-4 py-2">
         Prev: {prevTitle}
       </Link>
-      <Link href={nextUrl} className="btn-hover px-4 py-2 border-gradient">
+      <Link href={nextUrl} className="btn-hover border-gradient px-4 py-2">
         Next: {nextTitle}
       </Link>
     </div>
